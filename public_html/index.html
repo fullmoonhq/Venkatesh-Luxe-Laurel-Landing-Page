@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Venkatesh Laurel</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="build/js/intlTelInput.min.js"></script>
+    
+    <style>
+       
+    @media only screen and (max-width: 770px) {
+  
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none;
+  }
+  
+  .carousel-indicators {
+    right: inherit;
+    top: 100%;
+    margin-left: 45%;
+  }
+
+
+.qrcode{
+    height: 60px;
+    width: 60px;
+}
+
+h6{
+    font-size: 12px;
+    text-align: center;
+}
+.navbar-toggler-icon{
+    background-color: #514f4f;
+    color: white;
+    padding: 5px;
+}
+
+  iframe{
+    width: 320px;
+    height: 200px;
+  }
+
+  /* Onclick popup*/
+
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 48%;
+  top: 25%;
+  transform: translate(-50%, 5%);
+  border: 3px solid #999999;
+  z-index: 9;
+}
+
+.formContainer {
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+table thead tr th h4{
+  font-size: 18px;
+}
+
+table tbody tr td h5{
+  font-size: 15px;
+}
+
+table tbody tr td button {
+  width: 70px;
+  font-size: 9px;
+}
+}
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="tel:7499625449" class="navbar-brand d-block d-lg-none">
+            <h4 class="text-primary fw-bolder"><i class="bi bi-telephone me-2 text-primary"></i>CALL : +91-7499625449 </h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <a href="index.html" class="ms-5"><img src="img/logo.webp" height="60px" width="40px"></a>
+            <div class="navbar-nav ms-auto mx-lg-auto py-0">
+                <a href="#configurations" class="nav-item nav-link">Configurations</a>
+                <a href="#amenities" class="nav-item nav-link">Amenities</a>
+                <a href="#floorplans" class="nav-item nav-link">Floor Plans</a>
+                <a href="#gallery" class="nav-item nav-link">Interior & Exterior</a>
+                <a href="#location" class="nav-item nav-link">Location</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="#!" class="nav-item nav-link" onclick="openForm()">Brochure<i class="bi bi-download fw-bolder ms-3 text-primary"></i></a>
+            </div>
+            <a href="tel:7499625449" class="me-5">
+                <h4 class="text-primary fw-bolder"><i class="bi bi-telephone me-2 text-primary"></i>CALL : +91-7499625449 </h4>
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- banner -->
+    <section class="banner_main"> 
+        <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img class="first-slide" src="img/b1.png" width="100%">
+                  <div class="container">
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img class="second-slide" src="img/b3.png"  width="100%">
+               </div>
+               <div class="carousel-item">
+                  <img class="third-slide" src="img/b1.png"  width="100%">
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+         </div>
+         <div class="container-fluid bg-dark">
+            <h1 class="display-4 text-center text-white pt-5">Venkatesh Laurel</h1>
+            <h5 class="text-white text-center">At Shivaji Nagar, Pune</h5>
+            <h4 class="text-white text-center tagline">36-Story Majestic Towers with 3 & 4 Bhk Residences</h4>
+            <h4 class="text-primary text-center pb-3">Register for Immediate Callback & Best Offers!</h4>
+            <div class="row justify-content-center ms-5 me-5">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 p-3">
+                    <form action="contact.php" method="POST">
+                        <div class="row g-3">
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control bg-light border-0 px-3" name="Name" id="name" placeholder="Your Name" style="height: 50px;" required>
+                            </div>
+            
+                            <div class="col-sm-3">
+                                <input type="tel" class="form-control bg-light border-0 px-5 ps-5 w-100" name="Contact" id="phone" placeholder="Contact" style="height: 50px;" required>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <input type="email" class="form-control bg-light border-0 px-3" name="Email" id="email" placeholder="Your Email" style="height: 50px;" required>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <button class="btn btn-primary border-inner w-100 py-3" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+    </section>
+     <!-- end banner -->
+     
+    <!-- About Start -->
+    <div class="container-fluid mt-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <img src="img/logo.webp" height="100px" width="70px">
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0 pb-5" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/b2.png" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="" style="text-align: justify;">
+                        Venkatesh Buildcon is delighted to introduce Venkatesh Laurel, an exceptional project located in the heart of Shivaji Nagar. Our project is a testament to luxury living, offering unparalleled homes with breathtaking views and an impressive range of amenities. Experience a lifestyle of opulence beyond imagination. Nestled in a prime location, this mega project is set to redefine the real estate landscape in Pune. With a track record spanning two decades, we have consistently fulfilled the housing aspirations of numerous individuals, contributing significantly to the nation's real estate sector. Our commitment to meticulous design and expert craftsmanship is evident in the creation and delivery of lavish homes, showcasing our unwavering passion for excellence.
+                    </p>
+                    <a href="#!" class="btn btn-primary border-inner py-3 px-5" onclick="openForm()">Download Brochure</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+     <!-- Highlights Start -->
+     <div class="container-fluid service position-relative px-5 mt-5" style="margin-bottom: 135px;">
+        <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+            <h1 id="highlights" class="display-4 text-uppercase">Highlights</h1>
+        </div>
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">Since 2000 Delivering Excellence</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">Landmarks Spread Across 6 Million Sqft</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">Nurturing Lives of 5000+ Happy Families</h4>
+                    </div>
+                </div> 
+                <div class="col-lg-3 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <h4 class="text-uppercase mb-3">Architectures Over 7 Million Sq.Ft.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hilights End -->
+
+    <!-- Configurations Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h1 id="configurations" class="display-4 text-uppercase">Configurations</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                  <table class="table table-light table-striped table-bordered text-center mt-3">
+                    <thead>
+                      <tr>
+                        <th scope="col"><h4>Type</h4></th>
+                        <th scope="col"><h4>Carpet</h4></th>
+                        <th scope="col"><h4>Pricing</h4></th>
+                        <th scope="col"><h4></h4></th>
+                      </tr>
+                    </thead> 
+                    <tbody>
+                      <tr>
+                        <td scope="row"><h5>3 Bhk</h5></td>
+                        <td><h5>982 - 1372 Sq.Ft.</h5></td>
+                        <td><h5>₹ 2.94 Cr</h5></td>
+                        <td><button class="pri_table_list btn btn-primary" onclick="openForm()">Price Breakup</button></td>
+                      </tr>
+                      <tr>
+                        <td scope="row"><h5>4 Bhk</h5></td>
+                        <td><h5>1623 - 1937 Sq.Ft.</h5></td>
+                        <td><h5>On Request</h5></td>
+                        <td><button class="pri_table_list btn btn-primary" onclick="openForm()">Price Breakup</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/costsheet.jpg">
+                            <div class="team-overlay w-100 h-60 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                            </div>
+                        </div>
+                        <a href="#!" class="" onclick="openForm()">
+                            <div class="bg-dark border-inner text-center p-3">
+                                <h5 class="text-primary">Get Cost Sheet</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- Configurations End -->
+
+    <!-- Amenities Start -->
+    <div class="container-fluid about py-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h1 id="amenities" class="display-4 text-uppercase">Amenities</h1>
+            </div>
+            <div class="tab-class text-center">
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-1">
+                            <div class="col-lg-3">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/19.png" alt="" style="width: 320px; height: 150px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">Swimming Pool</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/11.png" alt="" style="width: 320px; height: 150px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">Gymnassium</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/13.png" alt="" style="width: 320px; height: 150px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">Table Tennis</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/14.png" alt="" style="width: 320px; height: 150px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">Office Workplace</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/7.png" alt="" style="width: 320px; height: 150px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">Garden & Seatout Area</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/17.png" alt="" style="width: 320px; height: 150px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">Children's Play Area</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/12.png" alt="" style="width: 320px; height: 150px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">Multipurpose Hall</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src="img/15.png" alt="" style="width: 320px; height: 150px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">Party Lawns Area</h4>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="col-lg-12 col-md-6 text-center mt-4">
+                                <a href="#!" class="btn btn-primary border-inner py-3 px-5" onclick="openForm()">Many More</a>
+                            </div>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Amenities End -->
+
+     <!-- Configurations Start -->
+     <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h1 id="floorplans" class="display-4 text-uppercase">Floor Plans</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/23.png" alt="">
+                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                            </div>
+                        </div>
+                        <a href="#!" class="" onclick="openForm()">
+                            <div class="bg-dark border-inner text-center p-3">
+                                <h5 class="text-primary">MASTER LAYOUT</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/3bhk.png" alt="">
+                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                            </div>
+                        </div>
+                        <a href="#!" class="" onclick="openForm()">
+                            <div class="bg-dark border-inner text-center p-3">
+                                <h5 class="text-primary">3 BHK LAYOUT</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/4bhk.png" alt="">
+                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                            </div>
+                        </div>
+                        <a href="#!" class="" onclick="openForm()">
+                            <div class="bg-dark border-inner text-center p-3">
+                                <h5 class="text-primary">4 BHK LAYOUT</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Configurations End -->
+
+     <!-- Gallery Start -->
+     <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h1 id="gallery" class="display-4 text-uppercase">Interiors & Exteriors</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/3.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/11.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/14.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/19.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/1.jpg" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/4.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/5.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/7.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/9.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/17.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/6.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/8.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/12.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/13.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/10.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/15.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+                <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center">
+                        <img class="img-fluid" src="img/16.png" style="width:100%; height: 300px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+    <!-- Location Start -->
+    <div class="container py-5">
+        <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+            <h1 id="location" class="display-4 text-uppercase">Location</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d484301.40299748554!2d73.858731!3d18.501556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c013e362f881%3A0x747fd8773f894fe3!2sShree%20Venkatesh%20Association!5e0!3m2!1sen!2sin!4v1711487941897!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-8">
+                <div class="accordion offset-md-2" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Schools & Colleges <img src="img/university.png" class="ps-2 pb-2" width="40px">
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <ol style="list-style-type: square;">                    
+                                    <li class="mt-3"><h5>MODERN COLLEGE (2 MINUTES)</h5></li>  
+                                    <li><h5>COEP - COLLEGE OF ENGINEERING, PUNE (2 MINUTES)</h5></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item mt-3">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                HOSPITALS <img src="img/hospitals.png" class="ps-2 pb-2" width="40px">
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <ol style="list-style-type: square;">                    
+                                    <li><h5>OYSTER & PEARL HOSPITAL (1 MINUTES)</h5></li>
+                                    <li><h5>DECCAN HARDIKAR HOSPITAL (2 MINUTES)</h5></li>
+                                  </ol>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item mt-3">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                MALLS & GARDENS <img src="img/malls.png" class="ps-2 pb-2" width="40px">
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <ol style="list-style-type: square;"> 
+                                    <li class="mt-3"><h5>PAVILLION MALL (2 MINUTES)</h5></li> 
+                                    <li><h5>SKY JUMBER TRAMPOLINE PARK (2 MINUTES) </h5></li>
+                                    <li><h5>INOX (3 MINUTES)</h5></li> 
+                                    <li><h5>RAJIV GANDHI ZOOLOGICAL PARK (5 MINUTES)</h5></li>                  
+                                  </ol>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item mt-3">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                Nearby Landmarks <img src="img/landmarks.png" class="ps-2 pb-2" width="40px">
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body">
+                                <ol style="list-style-type: square;">  
+                                    
+                                    <li class="mt-3"><h5>METRO STATION (1 MINUTES)</h5></li>  
+                                    <li><h5>PUNE UNIVERSITY (10 MINUTES)</h5></li>
+                                    <li><h5>PUNE INTERNATIONAL AIRPORT (30 MINUTES)</h5></li>
+                                    
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Location End -->
+
+    <!-- Contact Start -->
+    <div class="section-title position-relative text-center mx-auto mb-3 mt-5 pb-3" style="max-width: 600px;">
+        <h1 id="contact" class="display-4 text-uppercase">Contact Our Team</h1>
+    </div>
+    <div class="container-fluid contact position-relative px-5" style="margin-top:60px;">
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <a href="tel:7499625449">
+                            <i class="bi bi-phone-vibrate fs-1 text-white"></i>
+                            <h6 class="text-uppercase my-2">Connect on Call - 7499625449</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <a aria-label="Chat on WhatsApp" href="https://wa.me/+917499625449">
+                            <i class="bi bi-whatsapp fs-1 text-white"></i>
+                            <h6 class="text-uppercase my-2">Chat on Whatsapp</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-primary border-inner text-center text-white p-5">
+                        <a href="tel:7499625449">
+                            <img src="img/location.png" height="60px" width="60px">
+                            <h6 class="text-uppercase my-2">Pickup & Drop</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form action="contact.php" method="POST">
+                        <div class="row g-3">
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control bg-light border-0 px-3" name="Name" id="name" placeholder="Your Name" style="height: 50px;" required>
+                            </div>
+            
+                            <div class="col-sm-4">
+                                <input type="tel" class="form-control bg-light border-0 px-3" name="Contact" id="phone" placeholder="Contact" style="height: 50px;" required>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control bg-light border-0 px-3" name="Email" id="email" placeholder="Your Email" style="height: 50px;" required>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <button class="btn btn-primary border-inner w-100 py-3" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- About Start -->
+    <div class="container-fluid mt-5 pt-5">
+        <div class="container py-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <div class="section-title position-relative text-center mx-auto mb-4 pb-3" style="max-width: 600px;">
+                        <h1 class="display-4 text-uppercase text-dark">About Developers</h1>
+                    </div>
+                    <p class="text-dark" style="text-align: justify;">Venkatesh Buildcon embodies a timeless adage that resonates deeply – 'The integrity of a home shapes the strength of a nation.' Since our inception in 2000, our unwavering commitment has centered on prioritizing the well-being of our clients. With two decades of dedicated service, we have diligently fulfilled the housing aspirations of numerous individuals. Our steadfast dedication to crafting luxurious residences underscores our enduring passion and meaningful contribution to the real estate landscape of our nation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End --> 
+
+    <!-- QRcode Start -->
+    <div class="container-fluid py-3">
+        <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+            <h1 class="display-4 text-uppercase">MahaRERA Number </h1>
+        </div>
+        <h5 class="text-center mb-5">The website project is registered under <a href="https://maharera.mahaonline.gov.in">https://maharera.mahaonline.gov.in</a></h5>
+        
+        <div class="row text-center">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <img src="img/qrcode.png" class="qrcode">
+                <h6>P52100055058</h6>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    <!-- QRcode End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-secondary py-2" style="background: #111111;">
+        <div class="container">
+            <p style="font-size: 10px; text-align: justify;">This website is operated by an authorized marketing partner and is not an official site. It is intended solely for informational purposes. The information provided here does not constitute an offer or guarantee of any services. Prices displayed on this website are subject to change without prior notice, and the availability of properties cannot be guaranteed. The images shown are for illustration purposes only and may not accurately depict the actual properties. Your data may be shared with developers registered with the Real Estate Regulatory Authority ( RERA ) for further processing as required. We may also send updates and information to the mobile number or email address you have provided. All rights reserved.
+                <a class="text-primary" href="privacypolicy.html">Privacy Policy</a>
+                <a class="text-primary" href="termsandconditions.html">Terms & Conditions</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+    
+     <!--form popup-->
+
+    <div class="popup" style="background-color: #f8f7f7 ;width: 330px; ">
+    <button id="close">&times;</button>
+    <img src="img/logo.webp" class="mb-3">
+    <h4 class="fw-bold" style="color: #e94b3a;">Register for Exclusive Deals!</span></h4>   
+    <form action="contact.php" method="POST" class="formContainer1">
+    
+        <div class="form-group">			
+            <input type="text" class="form-control" id="name" name="Name" placeholder="Name" required>
+        </div>
+  
+        <div class="form-group mt-1">
+            <div>
+                <input type="tel" class="form-control" id="phone" name="Contact Number" placeholder="Contact Number" required>
+            </div>
+        </div>
+  
+        <div class="form-group mt-1">							
+            <div>
+                <input type="email" class="form-control" id="email" name="Email" placeholder="Email Address" required>
+            </div>
+        </div>
+  
+        <button type="submit" class="modal-footer btn mt-2" 
+        style="display: block;
+        width: 200px;
+        position: relative;
+        text-align: center;
+        border-radius: 0px;
+        color: #ffffff;
+        background-color: var(--primary);;
+        text-decoration: none;
+        padding: 2px 0;
+        font-size: 15px;
+        margin-left: 30px;
+        ">
+        Enquire Now</button>
+        
+    </form>
+    </div>
+
+    <!--onclick form-->
+
+    <div class="loginPopup">
+        <div class="formPopup" id="popupForm">
+           <form action="contact.php" method="POST" class="formContainer">
+                <button type="button" class="cancel" onclick="closeForm()">&times;</button>
+                <img src="img/logo.webp" alt="logo">
+                <div class="row g-2">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control bg-light border-1 px-4" name="Name" id="name" placeholder="Name" style="height: 35px;" required>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <input type="tel" class="form-control bg-light border-1 px-4" name="Contact" id="phone" placeholder="Contact" style="height: 35px;" required>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <input type="email" class="form-control bg-light border-1 px-4" name="Email" id="email" placeholder="Email" style="height: 35px;" required>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <button class="btn btn-primary border-inner w-100 py-3" type="submit">Enquire Now</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="tel:7499625449" class="btn btn-primary border-inner py-3 px-3 fs-4 back-to-top"><i class="bi bi-telephone"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
