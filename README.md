@@ -111,6 +111,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## 🙋‍♂️ Contact
 
 For queries, suggestions, or feedback, please open an issue or contact [fullmoonhq](https://github.com/fullmoonhq).
+
 ---
 
 *Thank you for supporting the Venkatesh Laurel Landing Page project!*
